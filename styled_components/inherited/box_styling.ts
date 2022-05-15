@@ -6,6 +6,8 @@ export type BoxStylingType = ThemeProps<any> & {
     shadow?: string;
     height?: string;
     width?: string;
+    position?: string;
+    overflow?: string;
 };
 
 const BoxStyles = css`
@@ -14,6 +16,8 @@ const BoxStyles = css`
     box-shadow: ${(props: BoxStylingType) => props.shadow || 'none'};
     height: ${props => props.height};
     width: ${props => props.width};
+    position: ${props => props.position};
+    overflow: ${props => props.overflow};
 `;
 
 export default BoxStyles;

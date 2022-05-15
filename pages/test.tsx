@@ -1,12 +1,12 @@
 import React from 'react';
-import { Column } from 'chrollo-ui';
+import { Column, Center } from 'chrollo-ui';
 
 export default function Test() {
     return (
-        <Column gap='1rem' p={2} mainAxisAlignment='center' crossAxisAlignment='center'>
+        <Center gap='1rem' p={2} direction='column'>
             <div>item</div>
             <div>item</div>
             <div>item</div>
-        </Column>
+        </Center>
     );
 }
