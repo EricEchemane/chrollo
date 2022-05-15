@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --font-size-xxl: 80px;
+    --font-size-xl: 52px;
+    --font-size-lg: 20px;
+    --font-size-md: 16px;
+    --font-size-sm: 13px;
+    --radius-lg: 10px;
+    --radius-md: 6px;
+    --radius-sm: 4px;
+    --header-height: 72px;
+    --grid-gap: 32px;
+    --container-width: 1064px;
+    --container-lg-width: 1280px;
+    --theme-transition: 0.3s linear;
+
+    --color-bg: #05010d;
+    --color-bg-100: #101111;
+    --color-bg-200: #18191a;
+    --color-bg-300: #313133;
+    --color-bg-400: #494b4d;
+    --color-fg: #f4f4f6;
+    --color-fg-200: #c2c7ca;
+    --color-fg-300: #78787c;
+    --color-fg-400: #5e6366;
+    --color-yellow: #ffc533;
+    --color-yellow-transparent: rgba(255, 197, 51, 0.15);
+    --color-red: #ff6161;
+    --color-red-transparent: rgba(255, 97, 97, 0.15);
+    --color-blue: #57c1ff;
+    --color-blue-transparent: rgba(87, 193, 255, 0.15);
+    --color-green: #59d499;
+    --color-green-transparent: rgba(89, 212, 153, 0.15);
+    --color-border: #242728;
+    --color-button-bg: hsla(0, 0%, 100%, 0.815);
+    --color-button-bg-hover: #fff;
+    --color-button-fg: #18191a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter, SF Pro Display, -apple-system, sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: var(--color-fg);
+    line-height: 150%;
+}
+
+body {
+    background-color: var(--color-bg);
+    transition: background var(--theme-transition), color var(--theme-transition);
+    font-size: 16px;
+}
