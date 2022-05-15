@@ -4,11 +4,11 @@ import { Box, Row } from '../styled_components/index';
 export default function Containers() {
     return (
         <Box p={2}>
-            <Box p={3}> hello </Box>
-            <Row p={3} gap='2rem' mainAxisAlignment='center' crossAxisAlignment='center' border='1px solid white'>
-                <div> 1 </div>
-                <div> 2 </div>
-                <div> 3 </div>
+            <Box p={3} mb={2} border='1px solid hsla(0, 100%, 100%, .2)' radius='1rem'> Box component </Box>
+            <Row p={3} gap='2rem' border='1px solid hsla(0, 100%, 100%, .2)' radius='1rem'>
+                <div> Row item </div>
+                <div> Row item </div>
+                <div> Row item </div>
             </Row>
         </Box>
     );
