@@ -1,4 +1,4 @@
-declare const Center: import("styled-components").StyledComponent<"div", any, import("styled-components").ThemeProps<any> & {
+declare const Button: import("styled-components").StyledComponent<"button", any, import("styled-components").ThemeProps<any> & {
     p?: string | number | undefined;
     px?: string | number | undefined;
     py?: string | number | undefined;
@@ -15,19 +15,11 @@ declare const Center: import("styled-components").StyledComponent<"div", any, im
     ml?: string | number | undefined;
     mr?: string | number | undefined;
 } & {
-    border?: string | undefined;
-    radius?: string | undefined;
-    shadow?: string | undefined;
-    height?: string | undefined;
-    width?: string | undefined;
-    position?: string | undefined;
-    overflow?: string | undefined;
-    display?: string | undefined;
-    transform?: string | undefined;
-    background?: string | undefined;
-    opacity?: number | undefined;
-} & {
+    color?: string | undefined;
+    cursorPointer?: boolean | undefined;
+    direction?: "row" | "row-reverse" | undefined;
+    filled?: boolean | undefined;
     gap?: string | undefined;
-    direction?: "column" | "row" | undefined;
+    hue?: number | undefined;
 }, never>;
-export default Center;
+export default Button;

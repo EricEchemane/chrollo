@@ -6,4 +6,5 @@ import Row from "./components/row";
 import Column from "./components/column";
 import Center from "./components/center";
 import Position from "./components/position";
-export { Position, Center, Column, Row, Box, CallToActionButton, Text, Spacing, };
+import Button from "./components/button";
+export { Position, Center, Column, Row, Box, Button, CallToActionButton, Text, Spacing, };

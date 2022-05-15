@@ -24,6 +24,8 @@ declare const Position: import("styled-components").StyledComponent<"div", any, 
     overflow?: string | undefined;
     display?: string | undefined;
     transform?: string | undefined;
+    background?: string | undefined;
+    opacity?: number | undefined;
 } & {
     top?: string | number | undefined;
     bottom?: string | number | undefined;

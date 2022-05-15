@@ -6,6 +6,7 @@ import Row from "./components/row";
 import Column from "./components/column";
 import Center from "./components/center";
 import Position from "./components/position";
+import Button from "./components/button";
 
 export {
     // Containers
@@ -15,6 +16,7 @@ export {
     Row,
     Box,
     // Elements
+    Button,
     CallToActionButton,
     Text,
     Spacing,

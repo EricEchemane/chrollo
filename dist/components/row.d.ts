@@ -24,6 +24,8 @@ declare const Row: import("styled-components").StyledComponent<"div", any, impor
     overflow?: string | undefined;
     display?: string | undefined;
     transform?: string | undefined;
+    background?: string | undefined;
+    opacity?: number | undefined;
 } & {
     reverse?: boolean | undefined;
     gap?: string | undefined;

@@ -24,5 +24,7 @@ declare const Box: import("styled-components").StyledComponent<"div", any, impor
     overflow?: string | undefined;
     display?: string | undefined;
     transform?: string | undefined;
+    background?: string | undefined;
+    opacity?: number | undefined;
 }, never>;
 export default Box;
