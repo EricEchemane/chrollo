@@ -10,6 +10,8 @@ export type BoxStylingType = ThemeProps<any> & {
     overflow?: string;
     display?: string;
     transform?: string;
+    background?: string;
+    opacity?: number;
 };
 
 const BoxStyles = css`
@@ -22,6 +24,8 @@ const BoxStyles = css`
     overflow: ${props => props.overflow};
     display: ${props => props.display};
     transform: ${props => props.transform};
+    opacity: ${props => props.opacity};
+    background: ${props => props.background};
 `;
 
 export default BoxStyles;
