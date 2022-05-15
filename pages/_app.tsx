@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import '../dist/global.css';
+import 'chrollo-ui/dist/global.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
