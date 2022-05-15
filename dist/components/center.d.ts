@@ -20,6 +20,10 @@ declare const Center: import("styled-components").StyledComponent<"div", any, im
     shadow?: string | undefined;
     height?: string | undefined;
     width?: string | undefined;
+    position?: string | undefined;
+    overflow?: string | undefined;
+    display?: string | undefined;
+    transform?: string | undefined;
 } & {
     gap?: string | undefined;
     direction?: "column" | "row" | undefined;

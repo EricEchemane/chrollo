@@ -20,6 +20,10 @@ declare const Row: import("styled-components").StyledComponent<"div", any, impor
     shadow?: string | undefined;
     height?: string | undefined;
     width?: string | undefined;
+    position?: string | undefined;
+    overflow?: string | undefined;
+    display?: string | undefined;
+    transform?: string | undefined;
 } & {
     reverse?: boolean | undefined;
     gap?: string | undefined;

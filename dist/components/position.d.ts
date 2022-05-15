@@ -1,4 +1,4 @@
-declare const Column: import("styled-components").StyledComponent<"div", any, import("styled-components").ThemeProps<any> & {
+declare const Position: import("styled-components").StyledComponent<"div", any, import("styled-components").ThemeProps<any> & {
     p?: string | number | undefined;
     px?: string | number | undefined;
     py?: string | number | undefined;
@@ -25,9 +25,9 @@ declare const Column: import("styled-components").StyledComponent<"div", any, im
     display?: string | undefined;
     transform?: string | undefined;
 } & {
-    reverse?: boolean | undefined;
-    gap?: string | undefined;
-    mainAxisAlignment?: "center" | "flex-end" | "flex-start" | undefined;
-    crossAxisAlignment?: "center" | "flex-end" | "flex-start" | undefined;
+    top?: string | number | undefined;
+    bottom?: string | number | undefined;
+    left?: string | number | undefined;
+    right?: string | number | undefined;
 }, never>;
-export default Column;
+export default Position;

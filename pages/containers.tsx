@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Row, Column, Center } from '../styled_components/index';
+import { Box, Row, Column, Center, Position } from '../styled_components/index';
 
 export default function Containers() {
     return (
@@ -15,11 +15,16 @@ export default function Containers() {
                 <div> Column item </div>
                 <div> Column item </div>
             </Column> */}
-            <Center p={3} my={1} border='1px solid hsla(0, 100%, 100%, .2)' radius='1rem' gap='1rem'>
+            {/* <Center p={3} my={1} border='1px solid hsla(0, 100%, 100%, .2)' radius='1rem' gap='1rem'>
                 <div> Column item </div>
                 <div> Column item </div>
                 <div> Column item </div>
-            </Center>
+            </Center> */}
+            <Box position='relative'>
+                <Position> hello </Position>
+                <Position right={0}> <Box> should be right </Box> </Position>
+                <Position bottom={0}> hello </Position>
+            </Box>
         </Box>
     );
 }

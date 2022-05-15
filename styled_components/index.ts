@@ -5,9 +5,11 @@ import Box from "./components/box";
 import Row from "./components/row";
 import Column from "./components/column";
 import Center from "./components/center";
+import Position from "./components/position";
 
 export {
     // Containers
+    Position,
     Center,
     Column,
     Row,

@@ -5,6 +5,10 @@ export declare type BoxStylingType = ThemeProps<any> & {
     shadow?: string;
     height?: string;
     width?: string;
+    position?: string;
+    overflow?: string;
+    display?: string;
+    transform?: string;
 };
 declare const BoxStyles: import("styled-components").FlattenInterpolation<import("styled-components").ThemedStyledProps<{
     border?: string | undefined;
@@ -12,5 +16,9 @@ declare const BoxStyles: import("styled-components").FlattenInterpolation<import
     shadow?: string | undefined;
     height?: string | undefined;
     width?: string | undefined;
+    position?: string | undefined;
+    overflow?: string | undefined;
+    display?: string | undefined;
+    transform?: string | undefined;
 }, any>>;
 export default BoxStyles;
