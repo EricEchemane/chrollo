@@ -5,7 +5,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/EricEchemane/chrollo"
+  },
+  "bugs": {
+    "url": "https://github.com/EricEchemane/chrollo/issues"
+  },
   "description": "An accessible and awesome styled-components for React. Supports semantic containers and layouts inspired from flutter. Supports declarative spacing between elements and so much more!",
+  "license": "MIT",
   "author": {
     "name": "Eric Echemane",
     "email": "eechemane29@gmail.com"
