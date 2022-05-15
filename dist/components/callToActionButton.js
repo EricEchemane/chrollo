@@ -1,0 +1,14 @@
+"use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var styled_components_1 = __importDefault(require("styled-components"));
+var spacing_1 = __importDefault(require("../inherited/spacing"));
+var CallToActionButton = styled_components_1.default.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", ";\n  text-decoration: none;\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 12px 40px;\n  margin: 16px 0;\n  font-weight: 500;\n  line-height: 20px;\n  font-size: 16px;\n  letter-spacing: 0.2px;\n  transition: background-color 0.2s;\n  color: #0d0d0d;\n  background-color: hsla(0, 0%, 100%, 0.9);\n  background-clip: padding-box;\n  border: 3px solid hsla(0, 0%, 100%, 0.3);\n  border-radius: 8px;\n  width: ", ";\n  cursor: ", ";\n  &:hover {\n    background-color: hsla(0, 0%, 100%, 1);\n  }\n  &:before {\n    content: '';\n    position: absolute;\n    top: 5px;\n    bottom: 0;\n    left: 5px;\n    right: 5px;\n    z-index: -1;\n    background: conic-gradient(\n      from 147.14deg at 50% 50%,\n      #0294fe -55.68deg,\n      #ff2136 113.23deg,\n      #9b4dff 195deg,\n      #0294fe 304.32deg,\n      #ff2136 473.23deg\n    );\n    opacity: 0.6;\n    filter: blur(20px);\n    border-radius: 6px;\n  }\n"], ["\n  ", ";\n  text-decoration: none;\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 12px 40px;\n  margin: 16px 0;\n  font-weight: 500;\n  line-height: 20px;\n  font-size: 16px;\n  letter-spacing: 0.2px;\n  transition: background-color 0.2s;\n  color: #0d0d0d;\n  background-color: hsla(0, 0%, 100%, 0.9);\n  background-clip: padding-box;\n  border: 3px solid hsla(0, 0%, 100%, 0.3);\n  border-radius: 8px;\n  width: ", ";\n  cursor: ", ";\n  &:hover {\n    background-color: hsla(0, 0%, 100%, 1);\n  }\n  &:before {\n    content: '';\n    position: absolute;\n    top: 5px;\n    bottom: 0;\n    left: 5px;\n    right: 5px;\n    z-index: -1;\n    background: conic-gradient(\n      from 147.14deg at 50% 50%,\n      #0294fe -55.68deg,\n      #ff2136 113.23deg,\n      #9b4dff 195deg,\n      #0294fe 304.32deg,\n      #ff2136 473.23deg\n    );\n    opacity: 0.6;\n    filter: blur(20px);\n    border-radius: 6px;\n  }\n"])), spacing_1.default, function (props) { return props.width || 'max-content'; }, function (props) { return (props.cursorPointer ? 'pointer' : 'normal'); });
+exports.default = CallToActionButton;
+var templateObject_1;
