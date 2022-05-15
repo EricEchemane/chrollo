@@ -8,6 +8,11 @@
   "repository": {
     "url": "https://github.com/EricEchemane/chrollo"
   },
+  "keywords": [
+    "UI/UX",
+    "styled-components",
+    "reactjs"
+  ],
   "bugs": {
     "url": "https://github.com/EricEchemane/chrollo/issues"
   },
