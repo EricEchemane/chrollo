@@ -1,12 +1,12 @@
 import React from 'react';
-import { Column, Center } from 'chrollo-ui';
+import { Box, Position } from 'chrollo-ui';
 
 export default function Test() {
     return (
-        <Center gap='1rem' p={2} direction='column'>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-        </Center>
+        <Box p={2} position='relative'>
+            <Position> hello </Position>
+            <Position right={0}> should be on the right </Position>
+            <Position bottom={0}> bottom </Position>
+        </Box>
     );
 }

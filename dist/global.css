@@ -56,3 +56,27 @@ body {
     transition: background var(--theme-transition), color var(--theme-transition);
     font-size: 16px;
 }
+
+.fancy {
+    --offset: -.3rem;
+    background: hsla(0, 0%, 0%, .8);
+    border: 1px solid hsla(0, 0%, 100%, .1);
+    border-radius: calc(var(--offset) * -2);
+    position: relative;
+}
+
+.fancy::before {
+    content: '';
+    position: absolute;
+    top: var(--offset);
+    bottom: var(--offset);
+    left: var(--offset);
+    right: var(--offset);
+    background: linear-gradient(90.56deg, #27061a, #ff6363 29.69%, #9b4dff 52.6%, #100321 98.44%);
+    z-index: -1;
+    border-radius: calc(var(--offset) * -2);
+}
+
+.gradient-bg {
+    background: linear-gradient(90.56deg, #27061a, #ff6363 29.69%, #9b4dff 52.6%, #100321 98.44%);
+}
