@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Row } from '../styled_components/index';
+import { Box, Row, Column } from '../styled_components/index';
 
 export default function Containers() {
     return (
@@ -10,6 +10,11 @@ export default function Containers() {
                 <div> Row item </div>
                 <div> Row item </div>
             </Row>
+            <Column p={3} gap='2rem' border='1px solid hsla(0, 100%, 100%, .2)' radius='1rem'>
+                <div> Row item </div>
+                <div> Row item </div>
+                <div> Row item </div>
+            </Column>
         </Box>
     );
 }
