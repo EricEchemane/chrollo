@@ -8,6 +8,7 @@ export type BoxStylingType = ThemeProps<any> & {
     width?: string;
     position?: string;
     overflow?: string;
+    display?: string;
 };
 
 const BoxStyles = css`
@@ -18,6 +19,7 @@ const BoxStyles = css`
     width: ${props => props.width};
     position: ${props => props.position};
     overflow: ${props => props.overflow};
+    display: ${props => props.display};
 `;
 
 export default BoxStyles;
