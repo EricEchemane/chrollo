@@ -5,8 +5,8 @@ import Spacing, { SpacingProps } from "../inherited/spacing";
 type RowPropsType = SpacingProps & BoxStylingType & {
     reverse?: boolean; // reverse the direction of flex
     gap?: string;
-    mainAxisAlignment?: "flex-start" | "flex-end" | "center";
-    crossAxisAlignment?: "flex-start" | "flex-end" | "center";
+    mainAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
+    crossAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
 };
 
 const Row = styled.div<RowPropsType>`
