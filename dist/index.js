@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Spacing = exports.Text = exports.CallToActionButton = exports.Box = exports.Row = exports.Column = void 0;
+exports.Spacing = exports.Text = exports.CallToActionButton = exports.Box = exports.Row = exports.Column = exports.Center = void 0;
 var spacing_1 = __importDefault(require("./inherited/spacing"));
 exports.Spacing = spacing_1.default;
 var text_1 = __importDefault(require("./components/text"));
@@ -16,3 +16,5 @@ var row_1 = __importDefault(require("./components/row"));
 exports.Row = row_1.default;
 var column_1 = __importDefault(require("./components/column"));
 exports.Column = column_1.default;
+var center_1 = __importDefault(require("./components/center"));
+exports.Center = center_1.default;

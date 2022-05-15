@@ -4,4 +4,5 @@ import CallToActionButton from "./components/callToActionButton";
 import Box from "./components/box";
 import Row from "./components/row";
 import Column from "./components/column";
-export { Column, Row, Box, CallToActionButton, Text, Spacing, };
+import Center from "./components/center";
+export { Center, Column, Row, Box, CallToActionButton, Text, Spacing, };

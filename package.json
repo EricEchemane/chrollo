@@ -1,6 +1,6 @@
 {
   "name": "chrollo-ui",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,7 +36,7 @@
     "typescript": "4.6.4"
   },
   "devDependencies": {
-    "chrollo-ui": "0.1.7",
+    "chrollo-ui": "0.2.0",
     "@types/node": "17.0.33",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.4",
