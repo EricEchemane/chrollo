@@ -18,5 +18,7 @@ declare const Box: import("styled-components").StyledComponent<"div", any, impor
     border?: string | undefined;
     radius?: string | undefined;
     shadow?: string | undefined;
+    height?: string | undefined;
+    width?: string | undefined;
 }, never>;
 export default Box;

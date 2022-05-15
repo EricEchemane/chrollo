@@ -5,6 +5,6 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var styled_components_1 = require("styled-components");
-var BoxStyles = (0, styled_components_1.css)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    border: ", ";\n    border-radius: ", ";\n    box-shadow: ", ";\n"], ["\n    border: ", ";\n    border-radius: ", ";\n    box-shadow: ", ";\n"])), function (props) { return props.border || 'none'; }, function (props) { return props.radius || 'none'; }, function (props) { return props.shadow || 'none'; });
+var BoxStyles = (0, styled_components_1.css)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    border: ", ";\n    border-radius: ", ";\n    box-shadow: ", ";\n    height: ", ";\n    width: ", ";\n"], ["\n    border: ", ";\n    border-radius: ", ";\n    box-shadow: ", ";\n    height: ", ";\n    width: ", ";\n"])), function (props) { return props.border || 'none'; }, function (props) { return props.radius || 'none'; }, function (props) { return props.shadow || 'none'; }, function (props) { return props.height; }, function (props) { return props.width; });
 exports.default = BoxStyles;
 var templateObject_1;
