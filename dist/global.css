@@ -51,6 +51,11 @@
     line-height: 150%;
 }
 
+button:focus-visible,
+a:focus-visible {
+    box-shadow: 0 0 0 4px var(--color-bg), 0 0 0 6px var(--color-fg-200);
+}
+
 body {
     background-color: var(--color-bg);
     transition: background var(--theme-transition), color var(--theme-transition);
