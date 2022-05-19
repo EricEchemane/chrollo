@@ -23,7 +23,7 @@ Spacing is a css that is being inherited by all components. It contains several 
 
 *Examples:*
 
-```
+```html
     <Box p="1rem 2rem" m="1rem 1.5rem"> </Box>
     <Box p={2} m={1}> </Box>
     <Box pt={2} mt={1}> </Box>
@@ -36,7 +36,7 @@ Box styles are css props inherited by container components such as `Box, Row, Co
 
 BoxStyles API
 
-javascript```
+```javascript
 type BoxStyles = {
     border?: string;
     radius?: string;
