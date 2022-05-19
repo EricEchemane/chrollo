@@ -180,9 +180,45 @@ All components below inherit styles from `BoxStyles` and `Spacing` css. It can a
     </Center>
     ```
 - ### Position
-    This container is positioned absolute in relation with its parent. So it is important to set ```position: relative``` of the parent if you don't want this to position absolute in the body.
+    This container is positioned absolute relative to its parent. So it is important to set the `position` property of the parent as `relative` if you don't want this to position absolute in the body.
 
-### Special CSS Classes for Containers
+    Props:
+    ```typescript
+    type Position = {
+        top?: number | string,
+        bottom?: number | string,
+        left?: number | string,
+        right?: number | string,
+    }
+    ```
+    Examples:
+    ```html
+    <Box p={3}>
+        <!-- the items below will be positioned absolute relative to the document body -->
+        <!-- all items below will stack at each other -->
+        <Position> item 1 </Position>
+        <Position> item 2 </Position>
+        <Position> item 3 </Position>
+    </Box>
+    
+    <Box p={3}>
+        <Position> item 1 </Position>
+        <!-- item 2 below will be placed 0 pixels from the right of the document body -->
+        <Position right={0}> item 2 </Position>
+        <Position> item 3 </Position>
+    </Box>
+
+    <!-- to fix the issue of positioning relative to the document body, 
+    just add position='relative' to the parent -->
+    <Box p={3} position='relative'>
+        <Position> item 1 </Position>
+        <!-- now this item 2 below will be placed 0 pixels from the right of the parent Box -->
+        <Position right={0}> item 2 </Position>
+        <Position> item 3 </Position>
+    </Box>
+    ```
+
+### Special CSS Classes for Containers (Give it a try!😜👌)
 - `fancy`
 - `matte_glass`
 - `matte_glass_colored`
