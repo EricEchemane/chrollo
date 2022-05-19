@@ -108,6 +108,25 @@ All components below inherit styles from `BoxStyles` and `Spacing` css. It can a
     ```
 - ### Column
     A flex container with vertical mainAxis. Children of a Column are layed out vertically **(top to bottom)**.
+    This is equivalent to...
+    ```css
+    Column {
+        display: flex;
+        flex-direction: column;
+    }
+    ```
+    Props:
+    ```javascript
+    type Column = {
+        reverse?: boolean; // (flex-direction: column-reverse) if set to true, column by default
+        gap?: string;
+        // sets the justify-content value in the css
+        mainAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
+        // sets the align-items value in the css
+        crossAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
+    };
+    ```
+
 - ### Center
     Child of a Center is positioned in the center. If multiple child are given, you can pass a `direction` prop which sets the alignment of the children in the center. It is `row` by default.
 - ### Position
