@@ -36,6 +36,8 @@
     --color-button-bg: hsla(0, 0%, 100%, 0.815);
     --color-button-bg-hover: #fff;
     --color-button-fg: #18191a;
+
+    --chrollo-gradient: linear-gradient(90.56deg, #27061a, #ff6363 29.69%, #9b4dff 52.6%, #100321 98.44%);
 }
 
 * {
@@ -77,11 +79,32 @@ body {
     bottom: var(--offset);
     left: var(--offset);
     right: var(--offset);
-    background: linear-gradient(90.56deg, #27061a, #ff6363 29.69%, #9b4dff 52.6%, #100321 98.44%);
+    background: var(--chrollo-gradient);
     z-index: -1;
     border-radius: calc(var(--offset) * -2);
 }
 
 .gradient-bg {
-    background: linear-gradient(90.56deg, #27061a, #ff6363 29.69%, #9b4dff 52.6%, #100321 98.44%);
+    background: var(--chrollo-gradient);
+}
+
+.matte_glass,
+.matte_glass_colored {
+    background: hsla(0, 0%, 100%, .1);
+    border-radius: 12px;
+    position: relative;
+}
+
+.matte_glass_colored::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url('./assets/matte_bg.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
 }

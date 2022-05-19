@@ -11,7 +11,9 @@ const Home: NextPage = () => {
         </Box>
         <Button href='https://google.com' target='_blank' as='a' filled hue={255} > Read more <span className='icon'>&#8594;</span> </Button>
       </Center>
+
       <Text my={2} className='title' align='center'> Buttons </Text>
+
       <Center gap='2rem'>
         <Button href='#' as='a' filled hue={255} > Button as link <span className='icon'>&#8594;</span> </Button>
         <Button as={'button'} filled hue={155} direction='row-reverse'> Filled button <span className='icon'>&#8594;</span> </Button>
