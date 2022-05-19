@@ -58,17 +58,17 @@ type BoxStyles = {
 <h1 align='center'> Components </h1>
 
 ## Containers
-All components below inherit styles from `BoxStyles` and `Spacing` css. It can accept different props. See [BoxStyles](#BoxStyles) and [Spacing](#spacing-api) props.
+All components below inherit styles from `BoxStyles` and `Spacing` css. It can accept different props. See [BoxStyles](#boxstyles) and [Spacing](#spacing) props.
 
-- ## Box
+- ### Box
     Normal div with no alignment or any additional styling.
-- ## Row
+- ### Row
     A flex container with horizontal mainAxis. Children of a Row are layed out horizontally **(left to right)**..
-- ## Column
+- ### Column
     A flex container with vertical mainAxis. Children of a Column are layed out vertically **(top to bottom)**.
-- ## Center
+- ### Center
     Child of a Center is positioned in the center. If multiple child are given, you can pass a `direction` prop which sets the alignment of the children in the center. It is `row` by default.
-- ## Position
+- ### Position
     This container is positioned absolute in relation with its parent. So it is important to set ```position: relative``` of the parent if you don't want this to position absolute in the body.
 
 ### Special CSS Classes for Containers
