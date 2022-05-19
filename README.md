@@ -69,9 +69,43 @@ Examples:
 All components below inherit styles from `BoxStyles` and `Spacing` css. It can accept different props. See [BoxStyles](#boxstyles) and [Spacing](#spacing) props.
 
 - ### Box
-    Normal div with no alignment or any additional styling.
+    Normal div with no alignment or any additional styling except for the inherited `Spacing` and `BoxStyles` css.
+
+    Example:
+    ```html
+    <Box> 
+        <p> your content </p>
+    </Box>
+    ```
 - ### Row
-    A flex container with horizontal mainAxis. Children of a Row are layed out horizontally **(left to right)**..
+    A flex container with horizontal mainAxis. Children of a Row are layed out horizontally **(left to right)**.
+    This is equivalent to `display: flex` where the direction is `row` by default.
+
+    Props:
+    ```javascript
+    type Row = {
+        reverse?: boolean; // (flex-direction: row-reverse) if set to true, row by default
+        gap?: string;
+        // sets the justify-content value in the css
+        mainAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
+        // sets the align-items value in the css
+        crossAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
+    };
+    ```
+    Examples:
+    ```html
+    <Row>
+        <Box> child </Box>
+        <Box> next child </Box>
+        <Box> next child </Box>
+    </Row>
+
+    <Row mainAxisAlignment='center' gap='1rem'>
+        <Box> child </Box>
+        <Box> next child </Box>
+        <Box> next child </Box>
+    </Row>
+    ```
 - ### Column
     A flex container with vertical mainAxis. Children of a Column are layed out vertically **(top to bottom)**.
 - ### Center
