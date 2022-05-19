@@ -35,7 +35,7 @@ Spacing is a css that is being inherited by all components. It contains several 
 Box styles are css props inherited by container components such as `Box, Row, Column, Center, and Position`. The following code shows the available props you can pass to container elements.
 
 **BoxStyles API**
-```javascript
+```typescript
 type BoxStyles = {
     border?: string;
     radius?: string; // border-radius
@@ -82,7 +82,7 @@ All components below inherit styles from `BoxStyles` and `Spacing` css. It can a
     This is equivalent to `display: flex` where the direction is `row` by default.
 
     Props:
-    ```javascript
+    ```typescript
     type Row = {
         reverse?: boolean; // (flex-direction: row-reverse) if set to true, row by default
         gap?: string;
@@ -116,7 +116,7 @@ All components below inherit styles from `BoxStyles` and `Spacing` css. It can a
     }
     ```
     Props:
-    ```javascript
+    ```typescript
     type Column = {
         reverse?: boolean; // (flex-direction: column-reverse) if set to true, column by default
         gap?: string;
@@ -142,7 +142,43 @@ All components below inherit styles from `BoxStyles` and `Spacing` css. It can a
     ```
 
 - ### Center
-    Child of a Center is positioned in the center. If multiple child are given, you can pass a `direction` prop which sets the alignment of the children in the center. It is `row` by default.
+    A flex container where all of its children are justified and aligned to the center. If multiple child are given, you can pass a `direction` prop which sets the alignment of the children in the center. It is `row` by default. Center is equivalent to the following css below...
+    ```css
+    Center {
+        display: flex;
+        flex-direction: row; <!-- default -->
+        justify-content: center;
+        align-items: center;
+    }
+    ```
+    Props:
+    ```typescript
+    type Center = {
+        gap?: string;
+        direction?: "row" | "column";
+    }
+    ```
+    Examples:
+    ```html
+    <!-- single element positioned in the center with padding of 2 rem -->
+    <Center p={3}>
+        <Box> item </Box>
+    </Center>
+
+    <!-- centered in the horizontal axis, from left to right -->
+    <Center p={3}>
+        <Box> item 1 </Box>
+        <Box> item 2 </Box>
+        <Box> item 3 </Box>
+    </Center>
+
+    <!-- centered in the vertical axis, from top to bottom -->
+    <Center p={3} direction='column'>
+        <Box> item 1 </Box>
+        <Box> item 2 </Box>
+        <Box> item 3 </Box>
+    </Center>
+    ```
 - ### Position
     This container is positioned absolute in relation with its parent. So it is important to set ```position: relative``` of the parent if you don't want this to position absolute in the body.
 
