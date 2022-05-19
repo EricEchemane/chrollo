@@ -34,14 +34,13 @@ Spacing is a css that is being inherited by all components. It contains several 
 ## BoxStyles
 Box styles are css props inherited by container components such as `Box, Row, Column, Center, and Position`. The following code shows the available props you can pass to container elements.
 
-BoxStyles API
-
+**BoxStyles API**
 ```javascript
 type BoxStyles = {
     border?: string;
-    radius?: string;
-    shadow?: string;
-    height?: string;
+    radius?: string; // border-radius
+    shadow?: string; // box-shadow
+    height?: string; 
     width?: string;
     position?: string;
     overflow?: string;
@@ -50,6 +49,15 @@ type BoxStyles = {
     background?: string;
     opacity?: number;
 };
+```
+Examples:
+```html
+<Box border='1px solid red'> Your Content Here </Box>
+
+<Center shadow='2px 2px 14px hsla(0, 0%, 100%, .5)'>
+    <Text> Hello World </Text>
+    <Text> Hello World </Text>
+</Center>
 ```
 
 
