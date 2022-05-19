@@ -126,6 +126,20 @@ All components below inherit styles from `BoxStyles` and `Spacing` css. It can a
         crossAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
     };
     ```
+    Examples:
+    ```html
+    <Column>
+        <Box> child </Box>
+        <Box> next child </Box>
+        <Box> next child </Box>
+    </Column>
+
+    <Column crossAxisAlignment='center' gap='1rem'>
+        <Box> child </Box>
+        <Box> next child </Box>
+        <Box> next child </Box>
+    </Column>
+    ```
 
 - ### Center
     Child of a Center is positioned in the center. If multiple child are given, you can pass a `direction` prop which sets the alignment of the children in the center. It is `row` by default.
