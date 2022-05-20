@@ -49,7 +49,9 @@ const Button = styled.button<AnchorType>`
     cursor: ${props => props.cursorPointer ? 'pointer' : 'normal'};
 
     &:hover {
-        background: ${props => props.hue ? getBackground(props, 0.2) : 'hsla(0, 0%, 100%, .2)'};
+        background: ${props =>
+        props.hue ? getBackground(props, 0.2)
+            : props.filled ? 'hsla(0, 0%, 100%, .2)' : 'transparent'};
     }
     & > .icon {
         color: ${props => getColor(props)};
