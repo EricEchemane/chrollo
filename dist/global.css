@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 :root {
     --font-size-xxl: 80px;
@@ -107,4 +108,28 @@ body {
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+code {
+    list-style: none;
+    color: var(--color-fg-200);
+    text-shadow: none;
+    font-family: 'Source Code Pro', monospace;
+    font-size: .9rem;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    tab-size: 4;
+    hyphens: none;
+    border-radius: var(--radius-md);
+    display: inline-block;
+    padding: 0 .5rem;
+    line-height: 24px;
+    margin-bottom: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
+    vertical-align: middle;
+    background: var(--color-bg-300);
 }

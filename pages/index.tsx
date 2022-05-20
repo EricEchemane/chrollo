@@ -23,6 +23,10 @@ const Home: NextPage = () => {
       </Center>
 
       <Center p={3} gap="3rem">
+        <code>ctrl + k</code>
+      </Center>
+
+      <Center p={3} gap="3rem">
         <div>Hello <Badge>4</Badge> </div>
         <Input placeholder='Username' small />
         <Input placeholder='Password' small type={'password'} />
