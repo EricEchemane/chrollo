@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Text, Box, CallToActionButton, Row, Center, Button, Badge } from '../styled_components/index';
+import { Text, Box, CallToActionButton, Row, Center, Button, Badge, Input } from '../styled_components/index';
 
 const Home: NextPage = () => {
   return (
@@ -21,7 +21,15 @@ const Home: NextPage = () => {
         <Button href='#' as='a' color='dodgerblue'> Colored link  </Button>
       </Center>
 
-      <Center p={3}> <div>Hello <Badge>4</Badge> </div> </Center>
+      <Center p={3} gap="3rem" direction='column'>
+        <div>Hello <Badge>4</Badge> </div>
+        <Input placeholder='Username' small />
+        <Input placeholder='Password' small type={'password'} />
+        <Input placeholder='Number' small type={'number'} />
+        <Input placeholder='Username' />
+        <Input placeholder='Password' type={'password'} />
+        <Input placeholder='Number' type={'number'} />
+      </Center>
     </div>
   );
 };

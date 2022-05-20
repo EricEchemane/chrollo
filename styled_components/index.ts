@@ -8,8 +8,11 @@ import Center from "./components/center";
 import Position from "./components/position";
 import Button from "./components/button";
 import Badge from "./components/badge";
+import Input from "./components/input";
 
 export {
+    // inputs
+    Input,
     // suppliments
     Badge,
     // Containers
