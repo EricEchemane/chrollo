@@ -253,3 +253,22 @@ All components below inherit styles from `BoxStyles` and `Spacing` css. It can a
 - `fancy`
 - `matte_glass`
 - `matte_glass_colored`
+
+# Input
+This is a normal input element with `small` variant. This can be also a textarea by passing prop `as='textarea'`.
+
+Props:
+```typescript
+type Input = {
+    small?: boolean;
+}
+```
+Example:
+```html
+<!-- normal input -->
+<Input type='text' placeholder='Username' />
+<!-- small input -->
+<Input type='text' placeholder='Username' small />
+<!-- textarea -->
+<Input as='textarea' placeholder='Textarea'  />
+```

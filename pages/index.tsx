@@ -29,6 +29,7 @@ const Home: NextPage = () => {
         <Input placeholder='Username' />
         <Input placeholder='Password' type={'password'} />
         <Input placeholder='Number' type={'number'} />
+        <Input placeholder='Textarea' as='textarea' />
       </Center>
     </div>
   );
