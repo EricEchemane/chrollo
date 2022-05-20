@@ -38,7 +38,7 @@ const Button = styled.button<AnchorType>`
     align-items: center;
     font-size: calc(1rem - 2px);
     border-radius: 8px;
-    transition: background-color .2s;
+    transition: background-color .1s;
     letter-spacing: .05ch;
 
     padding: ${props => props.filled ? '.4rem .9rem' : 0};
@@ -49,7 +49,7 @@ const Button = styled.button<AnchorType>`
     cursor: ${props => props.cursorPointer ? 'pointer' : 'normal'};
 
     &:hover {
-        background: ${props => props.hue ? getBackground(props, 0.2) : 'hsla(0, 0%, 100%, .15)'};
+        background: ${props => props.hue ? getBackground(props, 0.2) : 'hsla(0, 0%, 100%, .2)'};
     }
     & > .icon {
         color: ${props => getColor(props)};
