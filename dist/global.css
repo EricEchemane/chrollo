@@ -133,3 +133,15 @@ code {
     vertical-align: middle;
     background: var(--color-bg-300);
 }
+
+select {
+    background: hsla(0, 0%, 100%, .1);
+    border: 1px solid hsla(0, 0%, 100%, .1);
+    padding: .5rem .1rem;
+    border-radius: .4rem;
+    min-width: 10ch;
+}
+
+option {
+    background: var(--color-bg);
+}

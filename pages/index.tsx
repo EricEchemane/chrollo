@@ -22,8 +22,13 @@ const Home: NextPage = () => {
         <Button href='#' as='a' color='dodgerblue'> Colored link  </Button>
       </Center>
 
-      <Center p={3} gap="3rem">
+      <Center p={3} gap="3rem" >
         <code>ctrl + k</code>
+        <select name="color" id="color">
+          <option value="red">red</option>
+          <option value="blue">blue</option>
+          <option value="yellow">yellow</option>
+        </select>
       </Center>
 
       <Center p={3} gap="3rem">
