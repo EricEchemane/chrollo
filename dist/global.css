@@ -142,6 +142,10 @@ select {
     min-width: 10ch;
 }
 
+select:focus-visible {
+    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .5);
+}
+
 option {
     background: var(--color-bg);
 }
