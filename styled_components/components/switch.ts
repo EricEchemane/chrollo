@@ -37,19 +37,19 @@ const Switch = styled.input.attrs(() => ({
     &:checked {
         background: ${props => getBackground(props)};
     }
+    &:focus-visible {
+        box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .5);
+    }
     &:checked::before {
         background: white;
         box-shadow: 0 0 2px hsla(0, 0%, 0%, 1);
     }
-
     &::after {
         all: unset !important;
     }
-
     &:checked::before {
         --transformX: calc(100% + 6px);
     }
-
     &::before {
         content: "";
         transition: 100ms ease;
