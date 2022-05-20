@@ -7,6 +7,7 @@ type RowPropsType = SpacingProps & BoxStylingType & {
     gap?: string;
     mainAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
     crossAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
+    wrap?: "wrap" | "nowrap";
 };
 
 const Row = styled.div<RowPropsType>`
@@ -19,6 +20,7 @@ const Row = styled.div<RowPropsType>`
     gap: ${props => props.gap};
     justify-content: ${props => props.mainAxisAlignment};
     align-items: ${props => props.crossAxisAlignment};
+    flex-wrap: ${props => props.wrap ? props.wrap : "wrap"};
 `;
 
 export default Row;

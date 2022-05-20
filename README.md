@@ -79,6 +79,7 @@ type BoxStyles = {
     transform?: string;
     background?: string;
     opacity?: number;
+    wrap?: "wrap" : "no-wrap";
 };
 ```
 Examples:
@@ -121,6 +122,7 @@ All components below inherit styles from `BoxStyles` and `Spacing` css. It can a
         mainAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
         // sets the align-items value in the css
         crossAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-evenly" | "space-between";
+        wrap?: "wrap" | "nowrap";
     };
     ```
     Examples:
@@ -180,6 +182,7 @@ All components below inherit styles from `BoxStyles` and `Spacing` css. It can a
         flex-direction: row; <!-- default -->
         justify-content: center;
         align-items: center;
+        flex-wrap: nowrap;
     }
     ```
     Props:
@@ -187,6 +190,7 @@ All components below inherit styles from `BoxStyles` and `Spacing` css. It can a
     type Center = {
         gap?: string;
         direction?: "row" | "column";
+        wrap?: "wrap" | "nowrap";
     }
     ```
     Examples:

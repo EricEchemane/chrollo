@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <Button href='#' as='a' color='dodgerblue'> Colored link  </Button>
       </Center>
 
-      <Center p={3} gap="3rem" direction='column'>
+      <Center p={3} gap="3rem">
         <div>Hello <Badge>4</Badge> </div>
         <Input placeholder='Username' small />
         <Input placeholder='Password' small type={'password'} />
