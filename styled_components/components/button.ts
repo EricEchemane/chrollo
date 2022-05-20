@@ -10,9 +10,9 @@ type AnchorType = SpacingProps & {
     hue?: number;
 };
 
-const hueErrorMessage = 'Hue must be from 0 to 360 in filled anchors.';
+export const hueErrorMessage = 'Hue must be from 0 to 360 in filled anchors.';
 
-const isInvalidHue = (hue?: number) => !hue || hue < 0 || hue > 360;
+export const isInvalidHue = (hue?: number) => !hue || hue < 0 || hue > 360;
 
 const getBackground = (props: AnchorType, alpha: number = 0.15) => {
     if (props.filled) {

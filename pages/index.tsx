@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Text, Box, CallToActionButton, Row, Center, Button } from '../styled_components/index';
+import { Text, Box, CallToActionButton, Row, Center, Button, Badge } from '../styled_components/index';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +20,8 @@ const Home: NextPage = () => {
         <Button href='#' as='a'> Normal link <span className='icon'>&#8594;</span> </Button>
         <Button href='#' as='a' color='dodgerblue'> Colored link  </Button>
       </Center>
+
+      <Center p={3}> <div>Hello <Badge>4</Badge> </div> </Center>
     </div>
   );
 };
