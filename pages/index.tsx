@@ -15,6 +15,7 @@ const Home: NextPage = () => {
       <Text my={2} className='title' align='center'> Buttons </Text>
 
       <Center gap='2rem'>
+        <Button filled > Install </Button>
         <Button href='#' as='a' filled hue={255} > Button as link <span className='icon'>&#8594;</span> </Button>
         <Button as={'button'} filled hue={155} direction='row-reverse'> Filled button <span className='icon'>&#8594;</span> </Button>
         <Button href='#' as='a'> Normal link <span className='icon'>&#8594;</span> </Button>

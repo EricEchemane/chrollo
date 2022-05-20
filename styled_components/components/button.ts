@@ -16,16 +16,16 @@ export const isInvalidHue = (hue?: number) => !hue || hue < 0 || hue > 360;
 
 const getBackground = (props: AnchorType, alpha: number = 0.15) => {
     if (props.filled) {
-        if (isInvalidHue(props.hue)) throw new Error(hueErrorMessage);
-        return `hsla(${props.hue || 255}, 100%, 76%, ${alpha})`;
+        if (props.hue && !isInvalidHue(props.hue)) return `hsla(${props.hue}, 100%, 76%, ${alpha})`;
+        else return `hsla(0, 0%, 100%, .1)`;
     }
     else return 'transparent';
 };
 
 const getColor = (props: AnchorType) => {
     if (props.filled) {
-        if (isInvalidHue(props.hue)) throw new Error(hueErrorMessage);
-        return `hsl(${props.hue || 255}, 100%, 76%)`;
+        if (props.hue && !isInvalidHue(props.hue)) return `hsl(${props.hue}, 100%, 76%)`;
+        else return `hsla(0, 0%, 100%, .9)`;
     }
     else if (props.color) return props.color;
     else return 'var(--color-fg)';
@@ -49,7 +49,7 @@ const Button = styled.button<AnchorType>`
     cursor: ${props => props.cursorPointer ? 'pointer' : 'normal'};
 
     &:hover {
-        background: ${props => getBackground(props, 0.25)};
+        background: ${props => props.hue ? getBackground(props, 0.2) : 'hsla(0, 0%, 100%, .15)'};
     }
     & > .icon {
         color: ${props => getColor(props)};
