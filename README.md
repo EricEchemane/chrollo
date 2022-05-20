@@ -2,7 +2,38 @@
 
 An accessible and awesome styled-components for React. Supports semantic containers and layouts inspired from flutter. Supports declarative spacing between elements and so much more!
 
-`npm i chrollo-ui` - *Work in progress*
+*Written in Typescript and Styled-components - Work in progress*
+
+## Usage
+
+Install and add to your project
+```bash
+npm i chrollo-ui
+```
+
+Import the global css file from `chrollo-ui`.
+This will apply all needed stylings for the components. 
+
+Please refer to your React framework docs on where to add global styling. In `NextJs` this should be imported inside `_app.ts` file.
+
+```typescript
+import 'chrollo-ui/dist/global.css';
+```
+**Using in your tsx/jsx files**
+```typescript
+// import the components from chrollo-ui
+import { Button, Text, Column } from 'chrollo-ui';
+
+export default function Home() {
+    return (
+        // use as a regular html tags with useful additional props
+        <Column p={2}>
+            <Text as='h2'> I am awesome </Text>
+            <Button> Learn more </Button> 
+        </Column>
+    )
+}
+```
 
 ## Spacing
 Spacing is a css that is being inherited by all components. It contains several props for declarative spacing of your elements to control each element's paddings and margins. It is flexible and minimal.
