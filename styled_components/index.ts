@@ -9,9 +9,11 @@ import Position from "./components/position";
 import Button from "./components/button";
 import Badge from "./components/badge";
 import Input from "./components/input";
+import Switch from "./components/switch";
 
 export {
     // inputs
+    Switch,
     Input,
     // suppliments
     Badge,

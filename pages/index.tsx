@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Text, Box, CallToActionButton, Row, Center, Button, Badge, Input } from '../styled_components/index';
+import { Text, Box, CallToActionButton, Row, Center, Button, Badge, Input, Switch } from '../styled_components/index';
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +22,8 @@ const Home: NextPage = () => {
         <Button href='#' as='a' color='dodgerblue'> Colored link  </Button>
       </Center>
 
+      <Text my={2} mt={5} className='title' align='center'> Inputs </Text>
+
       <Center p={3} gap="3rem" >
         <code>ctrl + k</code>
         <select name="color" id="color">
@@ -29,6 +31,8 @@ const Home: NextPage = () => {
           <option value="blue">blue</option>
           <option value="yellow">yellow</option>
         </select>
+
+        <Switch />
       </Center>
 
       <Center p={3} gap="3rem">
