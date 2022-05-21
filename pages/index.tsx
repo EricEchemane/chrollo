@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { Text, Box, CallToActionButton, Row, Center, Button, Badge, Input, Switch, Checkbox, Radio, Slider } from '../styled_components/index';
-import fillSliderTracks from '../dist/scripts/slider';
+import fillSliderTracks from '../dist/slider';
 import { ChangeEvent, useEffect, useState } from 'react';
 
 const Home: NextPage = () => {

@@ -330,13 +330,13 @@ Slider is exactly the `<input type='range' />` with single `hue` prop to set the
 
 **Track fill of the slider**.
 
-Whenever you use `Slider` component, import the `fillSliderTracks` function from `chrollo-ui/dist/scripts/slider` to initialize the track fill of your input range. Call `fillSliderTracks()` function in initial render of the component that is using it. This will handle the change event and fill the track slider according the its current value.
+Whenever you use `Slider` component, import the `fillSliderTracks` function from `chrollo-ui/dist/slider` to initialize the track fill of your input range. Call `fillSliderTracks()` function in initial render of the component that is using it. This will handle the change event and fill the track slider according the its current value.
 
 Example:
 
 `home.tsx`
 ```typescript
-import fillSliderTracks from 'chrollo-ui/dist/scripts/slider';
+import fillSliderTracks from 'chrollo-ui/dist/slider';
 import { Slider } from 'chrollo-ui';
 import { useEffect, useState } from 'react';
 
