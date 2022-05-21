@@ -294,3 +294,72 @@ Example:
     checked={showImageState} 
     onClick={toggleImageState} />
 ```
+
+# Checkbox and Radio
+This components are exactly `<input type='checkbox' />` and `<input type='radio' />` with one additional prop which is `hue`. Meaning you can use this components just like a normal html checkbox and radio element.
+
+Example:
+```html
+<!-- single -->
+<Checkbox name='group_name' value='value' />
+
+<!-- Group -->
+<Column>
+    <Text> Fruit checklist <Text>
+    <Center>
+        <label for='mango'> Mango </label>
+        <Checkbox 
+            name='fruit' 
+            value='mango' 
+            id='mango' />
+    </Center>
+    <Center>
+        <label for='orange'> Orange </label>
+        <Checkbox 
+            name='fruit' 
+            value='orange' 
+            id='orange' />
+    </Center>
+</Column>
+```
+
+# Slider
+Slider is exactly the `<input type='range' />` with single `hue` prop to set the color of the slider.
+
+**NOTE:** In using slider component, the `max`, `min`, `value` attributes are required in order for the slider to render the `track fill` which is discussed below.
+
+**Track fill of the slider**.
+
+Whenever you use `Slider` component, import the `fillSliderTracks` function from `chrollo-ui/dist/scripts/slider` to initialize the track fill of your input range. Call `fillSliderTracks()` function in initial render of the component that is using it. This will handle the change event and fill the track slider according the its current value.
+
+Example:
+
+`home.tsx`
+```typescript
+import fillSliderTracks from 'chrollo-ui/dist/scripts/slider';
+import { Slider } from 'chrollo-ui';
+import { useEffect, useState } from 'react';
+
+const Home = () => {
+
+    const [rangeValue, setRangeValue] = useState(30);
+    const handler = (e: InputEvent) => {
+        setRangeValue(e.target.value);
+    }
+
+    // initialize fill tracks in initial render
+    useEffect(() => {
+        fillSliderTracks();
+    }, []);
+
+    return (
+        <Slider
+            min={0}
+            max={100}
+            value={rangeValue}
+            onInput={handler}/>
+    )
+}
+
+export default Home;
+```
