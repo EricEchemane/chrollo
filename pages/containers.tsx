@@ -1,37 +1,18 @@
 import React from 'react';
-import { Box, Row, Column, Center, Position } from '../styled_components/index';
+import { Box, Row, Column, Center, Position, ResponsiveContainer } from '../styled_components/index';
 
 export default function Containers() {
     return (<>
-        <Box p={2}>
-            {/* <Box p={3} my={1} border='1px solid hsla(0, 100%, 100%, .2)' radius='1rem'> Box component </Box>
-            <Row p={3} my={1} gap='2rem' border='1px solid hsla(0, 100%, 100%, .2)' radius='1rem'>
-                <div> Row item </div>
-                <div> Row item </div>
-                <div> Row item </div>
-            </Row>
-            <Column p={3} my={1} gap='2rem' border='1px solid hsla(0, 100%, 100%, .2)' radius='1rem'>
-                <div> Column item </div>
-                <div> Column item </div>
-                <div> Column item </div>
-            </Column> */}
-            {/* <Center p={3} my={1} border='1px solid hsla(0, 100%, 100%, .2)' radius='1rem' gap='1rem'>
-                <div> Column item </div>
-                <div> Column item </div>
-                <div> Column item </div>
-            </Center> */}
-            {/* <Box position='relative'>
-                <Position> hello </Position>
-                <Position right={0}> <Box> should be right </Box> </Position>
-                <Position bottom={0}> hello </Position>
-            </Box> */}
-        </Box>
-
-        <Box p={3} m={3} className='matte_glass_colored'>
-            content matt glass colored
-        </Box>
-        <Box p={3} m={3} className='matte_glass'>
-            content
-        </Box>
+        <ResponsiveContainer
+            direction={{ sm: 'column' }}
+            crossAxisAlignment={{ sm: 'center' }}
+            gap='2rem' m={2} className='fancy' p={2}>
+            <Box> item 1 </Box>
+            <Box> item 2 </Box>
+            <Box> item 3 </Box>
+            <Box> item 4 </Box>
+            <Box> item 5 </Box>
+            <Box> item 6 </Box>
+        </ResponsiveContainer>
     </>);
 }

@@ -13,6 +13,7 @@ import Switch from "./components/switch";
 import Checkbox from "./components/checkbox";
 import Radio from "./components/radio";
 import Slider from "./components/slider";
+import ResponsiveContainer from "./components/responsive_container";
 
 export {
     // inputs
@@ -24,6 +25,7 @@ export {
     // suppliments
     Badge,
     // Containers
+    ResponsiveContainer,
     Position,
     Center,
     Column,
