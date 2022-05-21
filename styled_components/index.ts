@@ -12,9 +12,11 @@ import Input from "./components/input";
 import Switch from "./components/switch";
 import Checkbox from "./components/checkbox";
 import Radio from "./components/radio";
+import Slider from "./components/slider";
 
 export {
     // inputs
+    Slider,
     Radio,
     Checkbox,
     Switch,

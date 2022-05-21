@@ -1,7 +1,17 @@
 import type { NextPage } from 'next';
-import { Text, Box, CallToActionButton, Row, Center, Button, Badge, Input, Switch, Checkbox, Radio } from '../styled_components/index';
+import { Text, Box, CallToActionButton, Row, Center, Button, Badge, Input, Switch, Checkbox, Radio, Slider } from '../styled_components/index';
+import fillSliderTracks from '../dist/scripts/slider';
+import { useEffect, useState } from 'react';
 
 const Home: NextPage = () => {
+
+  const [sliderValue, setSliderValue] = useState(30);
+  const sliderInputHandler = (e: any) => setSliderValue(e.target.value);
+
+  useEffect(() => {
+    fillSliderTracks();
+  });
+
   return (
     <div>
       <Center p={2.5} className='fancy' m={3} width='max-content' gap='2rem'>
@@ -35,8 +45,11 @@ const Home: NextPage = () => {
         <Switch />
 
         <Checkbox />
+
         <Radio name='gender' value='male' />
-        <Radio name='gender' value='female' /> hello
+        <Radio name='gender' value='female' />
+
+        <Slider min={0} max={100} value={sliderValue} onInput={sliderInputHandler} />
       </Center>
 
       <Center p={3} gap="3rem">
