@@ -1,6 +1,4 @@
-export declare const hueErrorMessage = "Hue must be from 0 to 360 in filled anchors.";
-export declare const isInvalidHue: (hue?: number | undefined) => boolean;
-declare const Button: import("styled-components").StyledComponent<"button", any, import("styled-components").ThemeProps<any> & {
+declare const Badge: import("styled-components").StyledComponent<"sup", any, import("styled-components").ThemeProps<any> & {
     p?: string | number | undefined;
     px?: string | number | undefined;
     py?: string | number | undefined;
@@ -17,11 +15,7 @@ declare const Button: import("styled-components").StyledComponent<"button", any,
     ml?: string | number | undefined;
     mr?: string | number | undefined;
 } & {
-    color?: string | undefined;
-    cursorPointer?: boolean | undefined;
-    direction?: "row" | "row-reverse" | undefined;
-    filled?: boolean | undefined;
-    gap?: string | undefined;
     hue?: number | undefined;
+    fontSize?: string | undefined;
 }, never>;
-export default Button;
+export default Badge;

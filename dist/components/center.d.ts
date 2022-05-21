@@ -29,5 +29,6 @@ declare const Center: import("styled-components").StyledComponent<"div", any, im
 } & {
     gap?: string | undefined;
     direction?: "column" | "row" | undefined;
+    wrap?: "nowrap" | "wrap" | undefined;
 }, never>;
 export default Center;

@@ -10,6 +10,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var box_styling_1 = __importDefault(require("./../inherited/box_styling"));
 var styled_components_1 = __importDefault(require("styled-components"));
 var spacing_1 = __importDefault(require("../inherited/spacing"));
-var Center = styled_components_1.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    ", ";\n    ", ";\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: ", ";\n    gap: ", ";\n"], ["\n    ", ";\n    ", ";\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: ", ";\n    gap: ", ";\n"])), spacing_1.default, box_styling_1.default, function (props) { return props.direction; }, function (props) { return props.gap; });
+var Center = styled_components_1.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    ", ";\n    ", ";\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: ", ";\n    gap: ", ";\n    flex-wrap: ", ";\n"], ["\n    ", ";\n    ", ";\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: ", ";\n    gap: ", ";\n    flex-wrap: ", ";\n"])), spacing_1.default, box_styling_1.default, function (props) { return props.direction; }, function (props) { return props.gap; }, function (props) { return props.wrap ? props.wrap : "wrap"; });
 exports.default = Center;
 var templateObject_1;

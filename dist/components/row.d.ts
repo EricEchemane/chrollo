@@ -31,5 +31,6 @@ declare const Row: import("styled-components").StyledComponent<"div", any, impor
     gap?: string | undefined;
     mainAxisAlignment?: "center" | "space-around" | "space-between" | "space-evenly" | "flex-end" | "flex-start" | undefined;
     crossAxisAlignment?: "center" | "space-around" | "space-between" | "space-evenly" | "flex-end" | "flex-start" | undefined;
+    wrap?: "nowrap" | "wrap" | undefined;
 }, never>;
 export default Row;
