@@ -10,9 +10,11 @@ import Button from "./components/button";
 import Badge from "./components/badge";
 import Input from "./components/input";
 import Switch from "./components/switch";
+import Checkbox from "./components/checkbox";
 
 export {
     // inputs
+    Checkbox,
     Switch,
     Input,
     // suppliments

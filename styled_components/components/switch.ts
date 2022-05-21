@@ -6,12 +6,12 @@ type SwitchType = SpacingProps & {
     hue?: number;
 };
 
-const getColor = (props: SwitchType) => {
+export const getColor = (props: any) => {
     if (props.hue && !isInvalidHue(props.hue)) return `hsl(${props.hue}, 100%, 76%)`;
     else return `hsla(0, 0%, 100%, .9)`;
 };
 
-const getBackground = (props: SwitchType, alpha: number = 0.15) => {
+export const getBackground = (props: any, alpha: number = 0.15) => {
     if (props.hue && !isInvalidHue(props.hue)) return `hsla(${props.hue}, 50%, 50%, 1)`;
     else return `hsla(255, 50%, 50%, 1)`;
 };
@@ -32,6 +32,7 @@ const Switch = styled.input.attrs(() => ({
     box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid hsla(0, 0%, 100%, .1);
     background-color: hsla(0, 0%, 100%, .1);
+    cursor: pointer;
     --transformX: 3px;
     
     &:checked {

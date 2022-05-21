@@ -149,3 +149,7 @@ select:focus-visible {
 option {
     background: var(--color-bg);
 }
+
+input[type='checkbox'][role='checkbox']:checked::before {
+    content: "\2714";
+}
