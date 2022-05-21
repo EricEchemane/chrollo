@@ -135,16 +135,38 @@ code {
 }
 
 select {
-    background: hsla(0, 0%, 100%, .1);
     border: 1px solid hsla(0, 0%, 100%, .1);
-    padding: .5rem .1rem;
+    padding: .5rem;
+    padding-right: 1.3rem;
     border-radius: .4rem;
     min-width: 10ch;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(./assets/select_arrow.svg) no-repeat;
+    background-size: 10%;
+    background-position: 95% 55%;
+    background-color: hsla(0, 0%, 100%, .1);
+    outline: none;
+    width: 18ch;
+    word-wrap: initial;
+    text-overflow: ellipsis;
+}
+
+select::-webkit-outer-spin-button,
+select::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 select:focus-visible {
     box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .5);
 }
+
+select:hover {
+    border: 1px solid hsla(0, 0%, 100%, .2);
+}
+
 
 option {
     background: var(--color-bg);

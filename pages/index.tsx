@@ -41,7 +41,7 @@ const Home: NextPage = () => {
       <Center p={3} gap="3rem" >
         <code>ctrl + k</code>
         <select name="color" id="color">
-          <option value="red">red</option>
+          <option value="red">red echemane </option>
           <option value="blue">blue</option>
           <option value="yellow">yellow</option>
         </select>
