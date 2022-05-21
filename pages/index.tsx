@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Text, Box, CallToActionButton, Row, Center, Button, Badge, Input, Switch, Checkbox } from '../styled_components/index';
+import { Text, Box, CallToActionButton, Row, Center, Button, Badge, Input, Switch, Checkbox, Radio } from '../styled_components/index';
 
 const Home: NextPage = () => {
   return (
@@ -35,6 +35,8 @@ const Home: NextPage = () => {
         <Switch />
 
         <Checkbox />
+        <Radio name='gender' value='male' />
+        <Radio name='gender' value='female' /> hello
       </Center>
 
       <Center p={3} gap="3rem">

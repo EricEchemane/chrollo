@@ -11,9 +11,11 @@ import Badge from "./components/badge";
 import Input from "./components/input";
 import Switch from "./components/switch";
 import Checkbox from "./components/checkbox";
+import Radio from "./components/radio";
 
 export {
     // inputs
+    Radio,
     Checkbox,
     Switch,
     Input,
