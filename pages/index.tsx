@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import { Text, Box, CallToActionButton, Row, Center, Button, Badge, Input, Switch, Checkbox, Radio, Slider } from '../styled_components/index';
 import fillSliderTracks from '../dist/slider';
 import { ChangeEvent, useEffect, useState } from 'react';
+import Head from 'next/head';
 
 const Home: NextPage = () => {
 
@@ -14,6 +15,9 @@ const Home: NextPage = () => {
 
   return (
     <div>
+      <Head>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
+      </Head>
       <Center p={2.5} className='fancy' m={3} width='max-content' gap='2rem'>
         <Box>
           <Text className='title' mb={0.5}> We are growing our team </Text>
@@ -54,6 +58,13 @@ const Home: NextPage = () => {
         <Radio name='gender' value='female' />
 
         <Slider min={0} max={100} value={sliderValue} onInput={sliderInputHandler} />
+
+        <div className="icon">
+          <i className='bx bxs-color'></i>
+        </div>
+        <div className="icon filled">
+          <i className='bx bx-home-alt-2' ></i>
+        </div>
       </Center>
 
       <Center p={3} gap="3rem">

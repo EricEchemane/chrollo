@@ -160,3 +160,16 @@ select:disabled {
     cursor: not-allowed;
     opacity: .7;
 }
+
+.icon.filled {
+    border-radius: 1rem;
+    font-size: 2rem;
+    line-height: 0;
+    padding: .9rem;
+    box-shadow: 0 0 0 1px var(--color-bg-400);
+    background: linear-gradient(hsla(0, 0%, 100%, .3), hsla(0, 0%, 100%, .12));
+}
+
+.icon.filled>i {
+    color: hsla(0, 0%, 100%, .8);
+}
