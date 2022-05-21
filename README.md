@@ -276,3 +276,21 @@ Example:
 <!-- textarea -->
 <Input as='textarea' placeholder='Textarea'  />
 ```
+
+# Switch
+Switch is inspired from mobile devices switches. In web, this is an `<input type='checkbox' />` designed like a switch using pseudo elements. This is use to toggle some state like an on or off button.
+
+Props:
+```typescript
+type Switch = {
+    hue?: number; // determines the color of the switch from 0 to 360
+}
+```
+
+Example:
+```html
+<Switch 
+    name='showImage' 
+    checked={showImageState} 
+    onClick={toggleImageState} />
+```

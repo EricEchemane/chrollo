@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { Text, Box, CallToActionButton, Row, Center, Button, Badge, Input, Switch, Checkbox, Radio, Slider } from '../styled_components/index';
 import fillSliderTracks from '../dist/scripts/slider';
-import { useEffect, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 
 const Home: NextPage = () => {
 
@@ -43,8 +43,12 @@ const Home: NextPage = () => {
         </select>
 
         <Switch />
+        <Switch disabled />
+        <Switch disabled checked />
 
         <Checkbox />
+        <Checkbox disabled />
+        <Checkbox disabled checked />
 
         <Radio name='gender' value='male' />
         <Radio name='gender' value='female' />

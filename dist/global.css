@@ -153,3 +153,10 @@ option {
 input[type='checkbox'][role='checkbox']:checked::before {
     content: "\2714";
 }
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+    cursor: not-allowed;
+    opacity: .7;
+}
