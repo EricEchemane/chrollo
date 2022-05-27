@@ -13,4 +13,5 @@ import Switch from "./components/switch";
 import Checkbox from "./components/checkbox";
 import Radio from "./components/radio";
 import Slider from "./components/slider";
-export { Slider, Radio, Checkbox, Switch, Input, Badge, Position, Center, Column, Row, Box, Button, CallToActionButton, Text, Spacing, };
+import ResponsiveContainer from "./components/responsive_container";
+export { Slider, Radio, Checkbox, Switch, Input, Badge, ResponsiveContainer, Position, Center, Column, Row, Box, Button, CallToActionButton, Text, Spacing, };

@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Spacing = exports.Text = exports.CallToActionButton = exports.Button = exports.Box = exports.Row = exports.Column = exports.Center = exports.Position = exports.Badge = exports.Input = exports.Switch = exports.Checkbox = exports.Radio = exports.Slider = void 0;
+exports.Spacing = exports.Text = exports.CallToActionButton = exports.Button = exports.Box = exports.Row = exports.Column = exports.Center = exports.Position = exports.ResponsiveContainer = exports.Badge = exports.Input = exports.Switch = exports.Checkbox = exports.Radio = exports.Slider = void 0;
 var spacing_1 = __importDefault(require("./inherited/spacing"));
 exports.Spacing = spacing_1.default;
 var text_1 = __importDefault(require("./components/text"));
@@ -34,3 +34,5 @@ var radio_1 = __importDefault(require("./components/radio"));
 exports.Radio = radio_1.default;
 var slider_1 = __importDefault(require("./components/slider"));
 exports.Slider = slider_1.default;
+var responsive_container_1 = __importDefault(require("./components/responsive_container"));
+exports.ResponsiveContainer = responsive_container_1.default;
